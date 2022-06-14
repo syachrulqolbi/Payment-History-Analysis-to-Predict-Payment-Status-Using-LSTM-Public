@@ -56,21 +56,21 @@ These are the results for our models.
   </tr>
   <tr>
     <td class="tg-c3ow">Late Paid</td>
-    <td class="tg-c3ow">69.98%</td>
+    <td class="tg-c3ow">70.48%</td>
     <td class="tg-c3ow">78.07%</td>
     <td class="tg-c3ow">65.96%</td>
     <td class="tg-c3ow">71.51%</td>
   </tr>
   <tr>
     <td class="tg-c3ow">Paid</td>
-    <td class="tg-c3ow">69.98%</td>
+    <td class="tg-c3ow">70.48%</td>
     <td class="tg-c3ow">56.44%</td>
     <td class="tg-c3ow">77.79%</td>
     <td class="tg-c3ow">65.42%</td>
   </tr>
   <tr>
     <td class="tg-c3ow">Loyal Paid</td>
-    <td class="tg-c3ow">69.98%</td>
+    <td class="tg-c3ow">70.48%</td>
     <td class="tg-c3ow">85.19%</td>
     <td class="tg-c3ow">66.19%</td>
     <td class="tg-c3ow">74.50%</td>

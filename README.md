@@ -1,9 +1,10 @@
-# Payment Behaviour Analysis to Predict Subscribption Status Using LSTM (Single)
+# Payment History Analysis to Predict Payment Status Using LSTM (Single)
 
 ## Data
 Payment History from Telkom DDB, feature used in the model:
 * Billing Amount Total
 * Billing Payment Date
+* Billing Period
 
 ## Team Member
 1. Syachrul Qolbi Nur Septi
@@ -11,7 +12,7 @@ Payment History from Telkom DDB, feature used in the model:
 ## Table of Contents
 1. [Requirements](#requirements) to install on your system
 2. [Results](#results)
-3. [Links to google colab](https://colab.research.google.com/drive/17Ews_Ol0RjeU69ewKKElYorFSuWymRtb?usp=sharing)
+3. [Links to google colab]([https://colab.research.google.com/drive/17Ews_Ol0RjeU69ewKKElYorFSuWymRtb?usp=sharing](https://colab.research.google.com/drive/1C2XGCS-81jo9YKU4oo-yN2W5zJsxdH45?usp=sharing))
 4. [Tutorial](#tutorial)
 
 ## Requirements
@@ -54,18 +55,25 @@ These are the results for our models.
     <td class="tg-7btt">F1-Score</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">Unsubscribe</td>
-    <td class="tg-c3ow">82.41%</td>
-    <td class="tg-c3ow">50.70%</td>
-    <td class="tg-c3ow">93.37%</td>
-    <td class="tg-c3ow">65.71%</td>
+    <td class="tg-c3ow">Late Paid</td>
+    <td class="tg-c3ow">47.92%</td>
+    <td class="tg-c3ow">78.07%</td>
+    <td class="tg-c3ow">65.96%</td>
+    <td class="tg-c3ow">71.51%</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">Subscribe</td>
-    <td class="tg-c3ow">82.41%</td>
-    <td class="tg-c3ow">99.88%</td>
-    <td class="tg-c3ow">98.33%</td>
-    <td class="tg-c3ow">99.10%</td>
+    <td class="tg-c3ow">Paid</td>
+    <td class="tg-c3ow">47.92%</td>
+    <td class="tg-c3ow">56.44%</td>
+    <td class="tg-c3ow">77.79%</td>
+    <td class="tg-c3ow">65.42%</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">Loyal Paid</td>
+    <td class="tg-c3ow">47.92%</td>
+    <td class="tg-c3ow">85.19%</td>
+    <td class="tg-c3ow">66.19%</td>
+    <td class="tg-c3ow">74.50%</td>
   </tr>
 </table></div>
 
@@ -157,12 +165,13 @@ API akan mengembalikan variabel Percentage dan Predict Description beserta value
 ## Hasil Retun API
 ```
 {
-    "Percentage": 84.6,
-    "Predict Description": "Agak Loyal",
-    "Amount Total Predict Description": "-",
-    "Payment Date Predict Description": "-",
-    "Loyality Description": "Loyal",
-    "Activity Description": "-"
+    "Percentage Late Paid": 0.25,
+    "Percentage Paid": 0.44,
+    "Percentage Loyal Paid": 0.3,
+    "Predict Description": "Paid",
+    "High Payment Date": 19,
+    "Low Payment Date": 2,
+    "Standard Deviation Payment Date": 4.94
 }
 ```
 ## Contoh mengunakan POSTMAN

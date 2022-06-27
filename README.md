@@ -165,13 +165,14 @@ API akan mengembalikan variabel Percentage dan Predict Description beserta value
 ## Hasil Retun API
 ```
 {
-    "Percentage Late Paid": 0.25,
-    "Percentage Paid": 0.44,
-    "Percentage Loyal Paid": 0.3,
-    "Predict Description": "Paid",
-    "High Payment Date": 19,
-    "Low Payment Date": 2,
-    "Standard Deviation Payment Date": 4.94
+    "Persentase Prediksi Telat Bayar": 20.11317,
+    "Persentase Prediksi Bayar Tepat Waktu": 31.52434,
+    "Persentase Prediksi Rajin Bayar": 48.36249,
+    "Deksripsi Prediksi": "Rajin Bayar",
+    "Tanggal Bayar Tertinggi": 19,
+    "Tanggal Bayar Terendah": 2,
+    "Standar Deviasi Tanggal Pembayaran": 4.94065,
+    "Standar Deviasi Status (Segmentasi Tanggal Pembayaran)": 0.4
 }
 ```
 ## Contoh mengunakan POSTMAN
